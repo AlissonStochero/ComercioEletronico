@@ -9,8 +9,9 @@ require 'vendor/autoload.php';
     <head>
         <meta charset="UTF-8">
         <title></title>
-        <link href="view/css/bootstrap.min.css" rel="stylesheet">
-        <link href="view/fontawesome/css/all.css" rel="stylesheet" type="text/css">
+        <link href="view/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <!-- <link href="view/vendor/fontawesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
         <link rel="stylesheet" href="view/css/index.css" rel="stylesheet">
     </head>
     <body>
@@ -50,7 +51,7 @@ require 'vendor/autoload.php';
         </div>
     </footer>
 
-  <script src="view/js/bootstrap.min.js"></script>
+  <script src="view/vendor/bootstrap/js/bootstrap.min.js"></script>
 
   </body>
 </html>
