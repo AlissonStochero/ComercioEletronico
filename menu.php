@@ -8,7 +8,7 @@
         <div class="collapse navbar-collapse">
             <ul class="nav navbar-nav navbar-right">
                 <li>
-                    <a class="page-scroll" href="#">1</a>
+                    <a class="page-scroll" href="index.php?pag=php_lib">php Lib</a>
                 </li>
                 <li>
                     <a class="page-scroll" href="#">2</a>
@@ -16,7 +16,7 @@
                 <li>
                     <a class="page-scroll" href="#">3</a>
                 </li>
-              
+
             </ul>
         </div>
         <!-- /.navbar-collapse -->
