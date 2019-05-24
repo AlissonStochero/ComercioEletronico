@@ -15,8 +15,21 @@ require 'vendor/autoload.php';
         <link rel="stylesheet" href="view/css/index.css" rel="stylesheet">
     </head>
     <body>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12">
+            <!-- Navigation -->
+            <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0;">
+              <?php
+                include 'menu.php';
+              ?>
+            </nav>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-12">
   <?php
-  include 'menu.php';
 
   if (Tools::getValue('pag')){
     $tpl = Tools::getValue('pag');
@@ -25,7 +38,13 @@ require 'vendor/autoload.php';
     require 'view/home.php'; //primeiro acesso, padrao 'home.php'
   }
   ?>
-  <footer>
+  </div>
+</div>
+</div>
+
+
+
+<footer>
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
