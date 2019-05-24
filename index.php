@@ -13,8 +13,7 @@ and open the template in the editor.
         <?php
         echo'ola';
         echo 'ola';
-        echo 'ola';
-        
+        echo 'ola';       
         ?>
     </body>
 </html>

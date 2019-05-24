@@ -1,0 +1,12 @@
+{
+
+"autoload": {
+  "classmap": ["classes/","controller/"]
+
+},
+  "require": {
+    "smarty/smarty": "^3.1"
+  }
+
+
+}
