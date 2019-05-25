@@ -8,7 +8,8 @@
         <div class="collapse navbar-collapse">
             <ul class="nav navbar-nav navbar-right">
                 <li>
-                    <a class="page-scroll" href="index.php?pag=php_lib">php Lib</a>
+                    <a class="page-scroll" href="#">php Lib</a>
+                    <!-- index.php?pag=php_lib -->
                 </li>
                 <li>
                     <a class="page-scroll" href="#">2</a>

@@ -9,4 +9,4 @@ define("PHPGRID_DBPASS","");
 define("PHPGRID_DBNAME","griddemo");
 
 // Basepath for lib
-define("PHPGRID_LIBPATH",dirname(__FILE__).DIRECTORY_SEPARATOR."lib".DIRECTORY_SEPARATOR);
+define("PHPGRID_LIBPATH",dirname(__FILE__).DIRECTORY_SEPARATOR."vendor/php_grid_lib/".DIRECTORY_SEPARATOR);
