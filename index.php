@@ -1,76 +1,22 @@
-<!DOCTYPE html>
-<!--
-Code by Gerson Dias
--->
-<?php
-require 'vendor/autoload.php';
-?>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title></title>
-        <link href="view/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-        <!-- <link href="view/vendor/fontawesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-        <link rel="stylesheet" href="view/css/index.css" rel="stylesheet">
-    </head>
-    <body>
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-md-12">
-            <!-- Navigation -->
-            <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0;">
-              <?php
-                include 'menu.php';
-              ?>
-            </nav>
-          </div>
-        </div>
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-        <div class="row">
-          <div class="col-md-12">
-  <?php
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-  if (Tools::getValue('pag')){
-    $tpl = Tools::getValue('pag');
-      require "view/".$tpl.".php"; // onde 'pagina' é a variavel passada pela URL (GET)
-  }else{
-    require 'view/home.php'; //primeiro acesso, padrao 'home.php'
-  }
-  ?>
-  </div>
-</div>
-</div>
+    <title>Comércio eletronico</title>
+  </head>
+  <body>
+    <h1>E-commerce</h1>
 
-
-
-<footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <span class="copyright">Copyright &copy; Iff 2019</span>
-                </div>
-                <div class="col-md-4">
-                    <ul class="list-inline social-buttons">
-                        <li><a href="#"><i class="fab fa-twitter"></i></a>
-                        </li>
-                        <li><a href="#"><i class="fab fa-facebook"></i></a>
-                        </li>
-                        <li><a href="#"><i class="fab fa-linkedin"></i></a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-md-4">
-                    <ul class="list-inline quicklinks">
-                        <li><a href="#">Sobre</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-  <script src="view/vendor/bootstrap/js/bootstrap.min.js"></script>
-
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   </body>
 </html>
