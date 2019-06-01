@@ -3,7 +3,7 @@
 $g = new jqgrid($db_conf);
 
 // set few params
-$grid["caption"] = "Grid Exemplo - Relação 1xN";
+$grid["caption"] = "Produtos Cadastrados";
 $grid["rowNum"] = "10";
 $grid["height"] = "";
 $g->set_options($grid);
@@ -41,12 +41,8 @@ $col["formatter"] = "select"; // display label, not value
 $cols[] = $col;
 
 
-
-
-
 //pass the cooked columns to grid
 $g->set_columns($cols);
-
 
 
 $g->select_command = "select produto.*, categoria_produto.descr_categoria from produto left JOIN categoria_produto on (produto.id_categoria = categoria_produto.id_categoria) ";
@@ -55,18 +51,14 @@ $g->select_command = "select produto.*, categoria_produto.descr_categoria from p
 $out = $g->render("list1");
 
 ?>
-<style>
-    .gerson{
-        background: silver;
-    }
-</style>
-<div class="gerson">
+
+<div>
     <h1>
     aqui é o produto
     </h1>
+    
     <?php
-            // echo $out
-
+      echo $out;
     ?>
 
 </div>

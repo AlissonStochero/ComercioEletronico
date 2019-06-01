@@ -1,10 +1,9 @@
 <?php
-// include db config
-include_once("config.php");
-// include and create object
-include("phpgrid-full-v2.1.1/lib/inc/jqgrid_dist.php");
-include './db_conf.php';
+include 'config.php';
+include 'db_conf.php';
+include 'phpgrid-full-v2.1.1/lib/inc/jqgrid_dist.php';
 ?>
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html>
 <head>
@@ -20,9 +19,8 @@ include './db_conf.php';
 <body>
 
     <?php
-     require './menu.php';
+     include 'menu.php';
     ?>
-
 
     <style>
     /* alternate row color */
@@ -37,9 +35,9 @@ include './db_conf.php';
     <?php
 
     if (isset($_GET['pag'])){
-        require $_GET['pag'].'/'.$_GET['pag'].".php"; // onde 'pagina' é a variavel passada pela URL (GET)
+        include $_GET['pag'].'/'.$_GET['pag'].".php"; // onde 'pagina' é a variavel passada pela URL (GET)
   }else{
-        require 'home.php'; //primeiro acesso, padrao 'home.php'
+        include 'home.php'; //primeiro acesso, padrao 'home.php'
   }
     ?>
 
