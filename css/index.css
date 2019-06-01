@@ -1,0 +1,26 @@
+#mainNav{
+  display: flex;
+  background: black;
+}
+
+.navbar-index{
+  width: 20%;
+  background: silver;
+}
+
+
+.navbar-collapse{
+  width: 80%;
+  position: relative;
+  display: flex;
+}
+
+.li_menu{
+  background: #fff;
+  border-radius: 5px;
+  margin:5px;
+  padding: 10px;
+  color: #fff;
+  display: inline;
+  width: 50px;
+}

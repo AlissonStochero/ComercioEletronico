@@ -1,22 +1,49 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<?php
+// include db config
+include_once("config.php");
+// include and create object
+include("phpgrid-full-v2.1.1/lib/inc/jqgrid_dist.php");
+include './db_conf.php';
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" media="screen" href="phpgrid-full-v2.1.1/lib/js/themes/redmond/jquery-ui.custom.css"></link>
+    <link rel="stylesheet" type="text/css" media="screen" href="phpgrid-full-v2.1.1/lib/js/jqgrid/css/ui.jqgrid.css"></link>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/index.css"></link>
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="phpgrid-full-v2.1.1/lib/js/jquery.min.js" type="text/javascript"></script>
+    <script src="phpgrid-full-v2.1.1/lib/js/jqgrid/js/i18n/grid.locale-pt-br.js" type="text/javascript"></script>
+    <script src="phpgrid-full-v2.1.1/lib/js/jqgrid/js/jquery.jqGrid.min.js" type="text/javascript"></script>
+    <script src="phpgrid-full-v2.1.1/lib/js/themes/jquery-ui.custom.min.js" type="text/javascript"></script>
+</head>
+<body>
 
-    <title>Comércio eletronico</title>
-  </head>
-  <body>
-    <h1>E-commerce</h1>
+    <?php
+     require './menu.php';
+    ?>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
+
+    <style>
+    /* alternate row color */
+    .myAltRowClass { background-color: #F1F1F1 !important; background-image: none !important; }
+
+    /* first row color */
+    .ui-jqgrid tr.jqgroup, .ui-jqgrid tr.jqgrow { background-color: inherit; background-image:none; }
+    </style>
+
+    <div style="margin:10px">
+
+    <?php
+
+    if (isset($_GET['pag'])){
+        require $_GET['pag'].'/'.$_GET['pag'].".php"; // onde 'pagina' é a variavel passada pela URL (GET)
+  }else{
+        require 'home.php'; //primeiro acesso, padrao 'home.php'
+  }
+    ?>
+
+    </div>
+
+</body>
 </html>
