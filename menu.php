@@ -17,10 +17,10 @@
         <div class="navbar-collapse">
             <ul>
               <li class="li_menu">
-                <a class="page-scroll" href="index.php">Index</a>
+                <a class="page-scroll" href="../index.php">Index</a>
               </li>
               <li class="li_menu">
-                <a class="page-scroll" href="index.php?pag=produto">Produto</a>
+                <a class="page-scroll" href="../index.php?pag=produto">Produto</a>
               </li>
             </ul>
         </div>
