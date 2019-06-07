@@ -35,9 +35,9 @@ include 'phpgrid-full-v2.1.1/lib/inc/jqgrid_dist.php';
     <?php
 
     if (isset($_GET['pag'])){
-        include $_GET['pag'].'/'.$_GET['pag'].".php"; // onde 'pagina' é a variavel passada pela URL (GET)
+        header("Location:".$_GET['pag']."/".$_GET['pag'].".php") ; // onde 'pagina' é a variavel passada pela URL (GET)
   }else{
-        include 'home.php'; //primeiro acesso, padrao 'home.php'
+        header("Location: home.php") ; //primeiro acesso, padrao 'home.php'
   }
     ?>
 
