@@ -55,13 +55,17 @@ $out = $g->render("list1");
     <link rel="stylesheet" type="text/css" media="screen" href="../phpgrid-full-v2.1.1/lib/js/themes/redmond/jquery-ui.custom.css"></link>
     <link rel="stylesheet" type="text/css" media="screen" href="../phpgrid-full-v2.1.1/lib/js/jqgrid/css/ui.jqgrid.css"></link>
     <link rel="stylesheet" type="text/css" media="screen" href="../css/index.css"></link>
-
+    <link rel="stylesheet" type="text/css" media="screen" href="css/produto.css"></link>
+    
+    <link href="css/freelancer.min.css" rel="stylesheet" type="text/css"/>
+    <link href="../fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css"/>
+    
     <script src="../phpgrid-full-v2.1.1/lib/js/jquery.min.js" type="text/javascript"></script>
     <script src="../phpgrid-full-v2.1.1/lib/js/jqgrid/js/i18n/grid.locale-pt-br.js" type="text/javascript"></script>
     <script src="../phpgrid-full-v2.1.1/lib/js/jqgrid/js/jquery.jqGrid.min.js" type="text/javascript"></script>
     <script src="../phpgrid-full-v2.1.1/lib/js/themes/jquery-ui.custom.min.js" type="text/javascript"></script>
 </head>
-<body>
+<body id="page-top">
      <?php
      include '../menu.php';
     ?>
@@ -82,9 +86,12 @@ $out = $g->render("list1");
     if (isset($_GET['pag'])){
     header("Location:".$_GET['pag']."/".$_GET['pag'].".php") ; // onde 'pagina' é a variavel passada pela URL (GET)
 }
-    
-    echo $out;
 ?>
+    <div class="container_product_gerson">
+    <?php
+    echo $out;
+    ?>
+    </div>
 
 </div>
 </body>
