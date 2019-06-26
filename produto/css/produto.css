@@ -1,6 +1,8 @@
 body{
   background-image: linear-gradient(white,gray);
-  
+}
+h3{
+  text-align: center;
 }
 .container_product_gerson{
     padding: 5% 20% 20% 20%;
